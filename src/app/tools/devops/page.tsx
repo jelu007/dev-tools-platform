@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Ship, GitBranch, FileText, Activity, Terminal, Container, Cloud } from "lucide-react"
+import { Ship, GitBranch, FileText, Activity, Terminal, Container, Cloud, AlertCircle } from "lucide-react"
 
 const tools = [
     {
@@ -38,6 +38,12 @@ const tools = [
         description: "Generate optimized Dockerfiles.",
         href: "/tools/devops/docker",
         icon: Container,
+    },
+    {
+        title: "Dockerfile Linter",
+        description: "Validate Dockerfiles for common issues.",
+        href: "/tools/devops/dockerfile-linter",
+        icon: AlertCircle,
     },
     {
         title: "Terraform Snippets",

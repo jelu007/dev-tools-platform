@@ -14,6 +14,7 @@ The platform includes three main tool categories:
 - **Minifier** - Minify JavaScript, CSS, and HTML
 - **Regex Tester** - Test and validate regular expressions
 - **UUID Generator** - Generate UUIDs (v1, v3, v4, v5)
+- **Diff Checker** - Compare two texts and view differences
 
 ### 🚀 DevOps Tools
 - **CI/CD** - CI/CD pipeline utilities

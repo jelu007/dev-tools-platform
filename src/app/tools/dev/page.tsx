@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { FileJson, Network, Regex, Key, Hash, Fingerprint, FileCode } from "lucide-react"
+import { FileJson, Network, Regex, Key, Hash, Fingerprint, FileCode, GitCompare, FileMinus } from "lucide-react"
 
 const tools = [
     {
@@ -44,6 +44,30 @@ const tools = [
         description: "Minify HTML, CSS, JS, and optimize SVG.",
         href: "/tools/dev/minify",
         icon: FileCode,
+    },
+    {
+        title: "Data & Transformation Tools",
+        description: "YAML ⇄ JSON, CSV ⇄ JSON",
+        href: "/tools/dev/data-transformation",
+        icon: FileCode,
+    },
+    {
+        title: "OAuth Token Generator / Inspector",
+        description: "Test OAuth flows and inspect token metadata.",
+        href: "/tools/dev/oauth",
+        icon: Key,
+    },
+    {
+        title: "Diff Checker",
+        description: "Compare two texts and view differences clearly.",
+        href: "/tools/dev/diff",
+        icon: GitCompare,
+    },
+    {
+        title: "Git Ignore Generator",
+        description: "Generate .gitignore files for common project types.",
+        href: "/tools/dev/gitignore",
+        icon: FileMinus,
     },
 ]
 
