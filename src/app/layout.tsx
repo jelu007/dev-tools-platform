@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevTools Platform",
+  title: "DevStack Platform",
   description: "Essential tools for Developers, DevOps, and Testers",
 };
 

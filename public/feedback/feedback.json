@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1764432780789-kxisvzns8",
+    "rating": 5,
+    "email": "jaleelvaa111@gmail.com",
+    "message": "awsome",
+    "timestamp": "2025-11-29T16:13:00.571Z",
+    "url": "http://localhost:3000/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "ipAddress": "::1"
+  },
+  {
+    "id": "1764433002628-xwv1so0ca",
+    "rating": 5,
+    "email": "jaleelvaa111@gmail.com",
+    "message": "asdasd",
+    "timestamp": "2025-11-29T16:16:42.456Z",
+    "url": "http://localhost:3000/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "ipAddress": "::1"
+  },
+  {
+    "id": "1764433015582-hjg6fdred",
+    "rating": 5,
+    "email": "jaleelvaa111@gmail.com",
+    "message": "asd",
+    "timestamp": "2025-11-29T16:16:55.569Z",
+    "url": "http://localhost:3000/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "ipAddress": "::1"
+  }
+]
