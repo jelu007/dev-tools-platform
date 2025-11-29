@@ -2,7 +2,8 @@
 
 import * as React from "react"
 import Link from "next/link"
-import jwtDecode from "jwt-decode"
+// import jwtDecode from "jwt-decode"
+import { jwtDecode } from "jwt-decode";
 import { toast } from "sonner"
 import { Copy, RotateCcw, Play, Download } from "lucide-react"
 
