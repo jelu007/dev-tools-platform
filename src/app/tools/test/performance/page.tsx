@@ -97,9 +97,9 @@ export default function PerformancePage() {
                             <Input
                                 type="number"
                                 min={1}
-                                max={100}
+                                max={10000}
                                 value={requests}
-                                onChange={(e) => setRequests(Math.min(100, Math.max(1, parseInt(e.target.value) || 1)))}
+                                onChange={(e) => setRequests(Math.min(10000, Math.max(1, parseInt(e.target.value) || 1)))}
                             />
                         </div>
                         <div className="flex items-center space-x-2">
