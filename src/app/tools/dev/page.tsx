@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { FileJson, Network, Regex, Key, Hash, Fingerprint, FileCode, GitCompare, FileMinus, ArrowRight, Sparkles, Code2, Zap, Lock } from "lucide-react"
+import { FileJson, Network, Regex, Key, Hash, Fingerprint, FileCode, GitCompare, FileMinus, ArrowRight, Sparkles, Code2, Zap, Lock , Clock} from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 const tools = [
@@ -107,6 +107,16 @@ const tools = [
         badge: "New",
         category: "Development"
     },
+    {
+        title: "Epoch Converter",
+        description: "Convert between epoch timestamps and human-readable dates.",
+        href: "/tools/dev/epoch-converter",
+        icon: Clock,
+        gradient: "from-green-500 to-emerald-600",
+        features: ["Unix to Date", "Date to Unix", "Millisecond support"],
+        badge: "Popular",
+        category: "Data Format"
+    }
 ]
 
 const benefits = [

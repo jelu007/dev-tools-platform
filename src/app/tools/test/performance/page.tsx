@@ -69,6 +69,97 @@ export default function PerformancePage() {
         }
     }
 
+    //     const apiTimeRef = React.useRef<{
+    //     start: number,
+    //     end: number,
+    //     duration: number
+    // }[]>([])
+
+
+    // const handleApiCallEnd = (data: any)=>{
+    //     console.log("All API calls completed", JSON.stringify(data))
+    //         const times = data.map((item:any)=>item.duration)
+    //         const sorted = [...times].sort((a, b) => a - b)
+    //         const min = Math.min(...times)
+    //         const max = Math.max(...times)
+    //         const avg = times.reduce((a, b) => a + b, 0) / times.length
+    //         const p95Index = Math.floor(sorted.length * 0.95)
+    //         const p99Index = Math.floor(sorted.length * 0.99)
+    //         const p95 = sorted[p95Index]
+    //         const p99 = sorted[p99Index]
+    //         const total = times.reduce((a, b) => a + b, 0)
+
+    //         setResult({ times, min, max, avg, p95, p99, total })
+    //         toast.success("Benchmark completed")
+    // } 
+
+    // const runBenchmark = async () => {
+    //     if (!url) {
+    //         toast.error("Please enter a URL")
+    //         return
+    //     }
+
+    //     setRunning(true)
+    //     setResult(null)
+        
+    //     try {
+    //         // Warm-up request to establish connection
+    //         if (warmup) {
+    //             await fetch(url)
+    //         }
+    //         apiTimeRef.current = new Array(requests).fill({
+    //             start:0,
+    //             end:0, 
+    //             duration:0
+    //         })
+
+
+    //         apiTimeRef.current.forEach((_,index)=>{
+    //             apiTimeRef.current[index].start = Date.now()
+    //              fetch(url)
+    //              .then(()=>{
+    //                apiTimeRef.current[index].end = Date.now()
+    //                apiTimeRef.current[index].duration = apiTimeRef.current[index].end - apiTimeRef.current[index].start
+    //                console.log(`Request ${index + 1} took ${apiTimeRef.current[index].duration}ms`)
+    //                if(index  === (requests -1)){
+    //                 handleApiCallEnd(apiTimeRef.current)
+    //                }
+    //             })
+    //         })
+          
+    //         for (let i = 0; i < requests; i++) {
+    //             // const start = performance.now()
+               
+                
+    //             // const end = performance.now()
+    //             // times.push(end - start)
+    //         }
+
+    //         // Calculate statistics
+
+
+    //         // const times = apiTimeRef.current.map(item=>item.duration)
+
+    //         // const sorted = [...times].sort((a, b) => a - b)
+    //         // const min = Math.min(...times)
+    //         // const max = Math.max(...times)
+    //         // const avg = times.reduce((a, b) => a + b, 0) / times.length
+    //         // const p95Index = Math.floor(sorted.length * 0.95)
+    //         // const p99Index = Math.floor(sorted.length * 0.99)
+    //         // const p95 = sorted[p95Index]
+    //         // const p99 = sorted[p99Index]
+    //         // const total = times.reduce((a, b) => a + b, 0)
+
+    //         // setResult({ times, min, max, avg, p95, p99, total })
+    //         // toast.success("Benchmark completed")
+    //     } catch (e) {
+    //         toast.error("Benchmark failed")
+    //         throw e
+    //     } finally {
+    //         setRunning(false)
+    //     }
+    // }
+
     return (
         <div className="h-full flex flex-col space-y-6">
             <div>
@@ -97,9 +188,9 @@ export default function PerformancePage() {
                             <Input
                                 type="number"
                                 min={1}
-                                max={10000}
+                                max={5000}
                                 value={requests}
-                                onChange={(e) => setRequests(Math.min(10000, Math.max(1, parseInt(e.target.value) || 1)))}
+                                onChange={(e) => setRequests(Math.min(5000, Math.max(1, parseInt(e.target.value) || 1)))}
                             />
                         </div>
                         <div className="flex items-center space-x-2">
